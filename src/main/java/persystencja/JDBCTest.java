@@ -32,15 +32,15 @@ public class JDBCTest {
         while (resultSet.next()){
             int id=resultSet.getInt("id");
             String name=resultSet.getString("name");
-            students.add(new Student(id,name));
+            students.add(new Student(name));
         }
         return students;
     }
 
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
         createTableForStudent();
-        Student student1=new Student(1,"Jacek");
-        Student student2=new Student(2,"Placek");
+        Student student1=new Student("Jacek");
+        Student student2=new Student("Placek");
         insertStudent(student1);
         insertStudent(student2);
         List<Student> studentList=getStudent();

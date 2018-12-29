@@ -2,9 +2,7 @@ package persystencja;
 
 import lombok.*;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.OneToOne;
+import javax.persistence.*;
 
 @AllArgsConstructor
 @NoArgsConstructor
@@ -14,13 +12,13 @@ import javax.persistence.OneToOne;
 @Entity
 public class Indeks {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String number;
     @OneToOne(mappedBy = "indeks")
     private Student student;
 
-    public Indeks (int id,String number){
-        this.id=id;
+    public Indeks (String number){
         this.number=number;
     }
 }

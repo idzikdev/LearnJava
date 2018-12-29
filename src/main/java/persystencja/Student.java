@@ -13,14 +13,14 @@ import javax.persistence.*;
 @Table(name = "students")
 public class Student {
     @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     @Column(name = "name",nullable = false)
     private String name;
     @OneToOne
     @ToString.Exclude
     private Indeks indeks;
-    public Student(int id,String name){
-        this.id=id;
+    public Student(String name){
         this.name=name;
     }
 //    @Embedded
