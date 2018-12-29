@@ -43,18 +43,24 @@ public class AppJPA {
 
     public static void main(String[] args) {
         manager.getTransaction().begin();
-        Student jan=manager.merge(new Student("Jan"));
-        Indeks indeks=manager.merge(new Indeks("indeks1"));
-        jan.setIndeks(indeks);
-        jan=manager.merge(jan);
-        indeks.setStudent(jan);
-        manager.merge(indeks);
+        Student jan=manager.merge(new Student("Jan","123456"));
+        Student mergeStudent=manager.merge(jan);
         manager.getTransaction().commit();
         System.out.println(jan);
+        System.out.println(jan.getIndeks());
 
-        Indeks mergeIndeks=manager.merge(indeks);
-        Indeks indx=manager.find(Indeks.class,mergeIndeks.getId());
-        System.out.println(indx);
+
+//        Indeks indeks=manager.merge(new Indeks("indeks1"));
+//        jan.setIndeks(indeks);
+//        jan=manager.merge(jan);
+//        indeks.setStudent(jan);
+//        manager.merge(indeks);
+//        manager.getTransaction().commit();
+//        System.out.println(jan);
+
+//        Indeks mergeIndeks=manager.merge(indeks);
+//        Indeks indx=manager.find(Indeks.class,mergeIndeks.getId());
+//        System.out.println(indx);
 //        System.out.println(jan);
 //        createStudent(jan);
 //        createStudent(new Student(11,"Józef"));
