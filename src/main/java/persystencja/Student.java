@@ -12,6 +12,10 @@ import java.util.Set;
 @NoArgsConstructor
 @ToString
 @Entity
+@NamedQueries(
+        {@NamedQuery(name = "Student.getAll",query = "SELECT s from Student s"),
+        @NamedQuery(name = "Student.get",query = "SELECT s from Student s")}
+)
 @Table(name = "students")
 public class Student {
     @Id

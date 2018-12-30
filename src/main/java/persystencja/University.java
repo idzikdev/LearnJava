@@ -18,7 +18,7 @@ public class University {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
     private String name;
-    @OneToMany(mappedBy = "university")
+    @OneToMany(mappedBy = "university",fetch = FetchType.EAGER)
     private Set<Student> students;
     public University(String name) {
         this.students=new HashSet<>();

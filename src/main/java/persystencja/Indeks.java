@@ -10,6 +10,7 @@ import javax.persistence.*;
 @Setter
 @ToString
 @Entity
+@Table(name = "indeksy")
 public class Indeks {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
