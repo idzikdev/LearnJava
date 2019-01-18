@@ -1,0 +1,12 @@
+Utworzyć klasę Person (imie, nazwisko, wiek)
+1.	Znajdź średnią wartość wieku wszystkich osób.
+2.	Znajdź najstarszego człowieka i dopisz do jego imienia prefix Geek.
+3.	Utwórz nowego człowieka ze wszystkich ludzi w następujący sposób: imię to pierwsze litery innych, nazwisko to ostatnie litery innych, wiek to suma lat pozostałych ludzi.
+4.	Utwórz listę lat ludzi na podstawie listy ludzi.
+5.	Znajdź człowieka, którego suma cyfr lat jest taka sama jak suma liter w imieniu.
+6.	Posortuj ludzi malejąco.
+7.	Usuń ludzi, którzy występują podwójnie. Następnie podaj ilu takich ludzi było (dokumentacja)
+8.	Na podstawie ludzi utwórz klasę Animal : imię, wiek.  Imie – złączenie imie i nazwisko człowieka, a wiek to wiek podzielony przez 10
+9.	Zamień wiek ludzi na psie lata n*6-2, a następnie wyświetl tych ludzi, których wiek przekracza 50 po zamianie
+10.	Zgrupuj ludzi, których suma liter w imieniu i nazwisku jest taka sama
+11.	Zgrupuj wszystkich ludzi po nazwiskach. Wyświetl najpopularniejsze nazwisko

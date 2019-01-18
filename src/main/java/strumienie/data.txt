@@ -1,0 +1,8 @@
+Jacek,Paweł,45
+Kasia,Słomska,40
+Jacek,Pudło,18
+Anastazja,Piórkowska,21
+Katarzyna,Polesińska,9
+Mieczysław,Ryba,36
+Tomasz,Pajduszewski,34
+Katarzyna,Polesińska,9
